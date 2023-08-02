@@ -1,0 +1,17 @@
+live
+screenlog.*
+deps.lst.dev
+projects/admin/phpmyadmin
+projects/admin/phpsysinfo
+core/utils/3rd-party/sdk
+fe-server
+static
+assets
+fe-fix-perms.sh
+resources/audios/*
+resources/data/*
+resources/lectures/*
+resources/verse-by-verse/*
+resources/books/*
+node_modules
+

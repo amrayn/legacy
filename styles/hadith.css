@@ -1,0 +1,166 @@
+@media print {
+	.hadith-container {
+		-moz-box-shadow: none !important;
+		-webkit-box-shadow: none !important;
+		box-shadow: none !important;
+	}
+	.tabs {
+		display: none !important;
+	}
+	#tab1 {
+		display:block !important;
+		padding-bottom:1.5em;
+	}
+	#tab2 {
+		display:block !important;
+	}
+	.tabs, #tab3, .link-small-icon {
+		display:none !important;
+	}
+}
+.delete-hadith-note {
+	float: right;
+    padding: 0.5em;
+    cursor: pointer;
+    text-decoration: none;
+    padding-top: 0.1em;
+	color:#666 !important;
+}
+.delete-hadith-note:hover {
+	color:#333 !important;
+}
+.hadith-tag {
+	color: #fff;
+	padding: 3px;
+	font-size: 0.9em;
+	margin-left: 0.3em;
+	cursor: pointer;
+}
+#tab3 .hadith-section-label {
+	font-weight:bold;
+}
+.hadith-section-label {
+	background-color: rgba(102, 102, 102, 0.08);
+	margin-bottom: 0.3em;
+	font-weight:bold;
+	padding:3px;
+}
+.hadith-title {
+	background-color: none;
+	font-family:Times New Roman, Arial, Helvetica, sans-serif !important;
+	border:0 !important;
+	color: #000;
+	padding:0;
+	font-weight:bold;
+	text-align: center;
+	font-size: 1.2em;
+}
+.hadith-tag-sahih { background-color:#6B8E23; }
+.hadith-tag-hasan { background-color:#6B8E23; }
+.hadith-tag-daeef { background-color:#ff0000; }
+.hadith-tag-moudu { background-color:#ff0000; }
+.hadith-tag-hasansahih { background-color:#6B8E23; }
+.hadith-tag-munkar { background-color:#f15757; }
+.hadith-tag-shadhdh { background-color:#f15757; }
+.hadith-tag-mauquf { background-color:#6B8E23; }
+.hadith-tag-maqtu { background-color:#6B8E23; }
+.hadith-tag-sahihinchain { background-color:#6B8E23; }
+.hadith-tag-daeefjiddan { background-color:#FF0000; }
+.hadith-tag-hasaninchain { background-color:#6B8E23; }
+.hadith-tag-sahihlighirih { background-color:#6B8E23; }
+.hadith-tag-marfu { background-color:#6B8E23; }
+.hadith-tag-mutawatir { background-color:#6B8E23; }
+.hadith-tag-mursal { background-color:#6B8E23; }
+.hadith-tag-lighairih { background-color:#6B8E23; }
+.hadith-tag-nochainfoundalalbani { background-color:#999; }
+.hadith-tag-chainisdaeefalalbani { background-color:#ff0000; }
+.hadith-tag-hasangharib { background-color:#FF7400; }
+.hadith-tag-qudsi { background-color:#00ff00; }
+.hadith-tag-sahihmouquf { background-color:#6B8E23; }
+.hadith-tag-unknown { background-color:#999; }
+.hadith-tag-gharib { background-color:#C8B560; }
+.hadith-tag-munqati { background-color:#ff0000; }
+.hadith-tag-sahihbyalbani { background-color:#6B8E23; }
+footnotes {
+  color: #333;
+  font-size: 0.8em;
+}
+
+#hadith-classifications > a {
+	font-weight: bold;
+}
+a.hadith-cross-ref {
+	text-decoration:none;
+}
+
+.tabs {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid rgba(61, 61, 61, 0.52);
+}
+
+.tabs li {
+  float: left;
+  margin: 0 -15px 0 0;
+}
+
+.tabs a {
+  float: left;
+  position: relative;
+  padding: 0 26px;
+  height: 0; 
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #3D3D3D;
+  border-bottom-color: #777;
+  opacity: .8;
+  filter: alpha(opacity=30);
+  cursor: default;	  
+}
+
+.tabs a:hover,
+.tabs a:focus {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.tabs a:focus {
+  outline: 0;
+}
+
+.tabs #current {
+  z-index: 3;
+  opacity: 1;
+  filter: alpha(opacity=100);	  
+}
+.content-tabs {
+  padding-top: 1em;
+}
+.hadith-text-arabic {
+	font-family: UthmaniScript;
+	font-size: 1.8em;
+	line-height: 1.5em;
+}
+
+
+@media(min-width: 860px) {
+	.hadith-text-arabic {
+		/*font-family: Lateef !important;*/
+	}
+}
+
+.proposed-edit-text {
+    border: 1px solid #666;
+    border-radius: 8px;
+    padding: 6px;
+  	margin-right: 56px;
+    margin-left: 28px;
+    font-family: Gentium Basic, Times New Roman, Arial, Helvetica, sans-serif, UthmaniScript;
+}
+}

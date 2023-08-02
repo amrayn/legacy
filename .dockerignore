@@ -1,0 +1,5 @@
+tools
+sync.sh
+fix-perms.sh
+*.md
+deps.lst

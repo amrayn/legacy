@@ -1,0 +1,271 @@
+.body-head,
+.more-menu,
+#foot-contents {
+  background-color: #0a3f3b;
+  border-bottom-color: #1c9188;
+  color: #fff;
+}
+
+#header-bar,.context-list {
+  border-bottom-color: #1c9188 !important;
+}
+.small-logo {
+   content: url('//amrayn.com/assets/images/themes-assets-rebrand/logo-small-teal.png?v=12');
+}
+.context-list > a {
+  color: #fff !important;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: #1c9188;
+  border-color: #1c9188;
+}
+
+.context-list > a.selected-context,
+.more-menu > ul > li:hover,
+.context-list > a:hover,
+.context-list-a-hover {
+  background: #1c9188;
+}
+
+a.link-small-icon:hover,
+span.link-small-icon:hover {
+  color: #000;
+}
+
+.more-menu {
+  border-color: #1c9188;
+}
+
+#nprogress .bar {
+  background-color: #58AEA8;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #FFFFFF, 0 0 5px #00ECFF;
+}
+
+.share-btn {
+  color: #1c9188;
+  background-color: transparent;
+}
+
+.next-page:hover,
+.prev-page:hover {
+  border-color: #1c9188;
+  color: #1c9188;
+  background-color: transparent;
+}
+
+.share-btn:hover {
+  background: #0a3f3b;
+}
+
+.ui-state-active,
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+  color: #fff;
+}
+
+.ayah-alt2 {
+  background-color: rgba(255, 157, 6, 0.11);
+}
+
+.search-item-heading {
+  background-color: rgba(27, 24, 24, 0.18);
+  color: #000;
+}
+
+.search-item-heading > a {
+  background-color: #0a3f3b;
+  color: #fff;
+}
+
+.search-item-alt {
+  background-color: rgba(0, 236, 255, 0.11);
+}
+
+div.search-item-heading > a:hover {
+  color: #D3D3D2 !important;
+  background-color: #000;
+}
+
+.search-bar2,
+.search-bar {
+  background-position: -11px -116px;
+  background-color: #fff;
+  color: #0A3F3D;
+}
+
+.spinner > .spinner-icon, .retry-loading {
+  border-top-color: #58AEA8;
+  border-left-color: #58AEA8;
+  color: #58AEA8;
+}
+
+.fav:before,
+.bookmarked:before,
+.filled-fa:before,
+.no-fav:hover::before,
+.not-bookmarked:hover::before {
+  color: #1c9188;
+}
+
+.hadith-nav > button {
+  background: transparent;
+  color: #454444;
+}
+
+.hadith-nav > button:hover {
+  color: #1c9188;
+  background-color: transparent;
+}
+
+.tabs a:focus,
+.tabs #current {
+  border-bottom-color: #1c9188;
+}
+
+.tabs a:hover {
+  border-bottom-color: #3d3d3d;
+}
+
+.notification-item.notification-unread,
+#user-bar .notification-more-avail {
+  background-color: #cffce2;
+}
+
+a.list-link-item:hover,
+a.chap-link-item:hover,
+.other-search-types-item:hover,
+.notification-item:hover {
+  background-color: rgba(28, 145, 136, 0.33);
+}
+
+body {
+  background: #fff;
+}
+
+.logohq,.large-logo {
+  content: url('//amrayn.com/assets/images/themes-assets-rebrand/logo-banner-teal.png?v=12');
+}
+
+#logoabout {
+  content: url('//amrayn.com/assets/images/themes-assets-rebrand/logo-teal.png?v=12');
+}
+
+.search-types {
+  border-color: #1c9188 !important;
+  background-color: rgba(3, 3, 3, 0.1);
+}
+
+section.bottom-menu {
+  background: #0a3f3b;
+}
+
+#btn-play {
+  background-color: #1c9188;
+}
+
+#btn-play > span {
+  color: #fff;
+}
+
+/*
+::selection,
+::-moz-selection,
+::-webkit-selection {
+  background: #5E9490;
+}
+*/
+
+.ui-state-active .ui-icon {
+  background-image: url("jquery-ui-1.11.1.custom/images/ui-icons_fff_256x240.png");
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-widget-header {
+  border-color: #1c9188;
+  background: #0a3f3b;
+}
+
+.chosen-container .chosen-results li.highlighted {
+  background-color: #00C2AC;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #166C86), color-stop(90%, #00C2AC));
+  background-image: -webkit-linear-gradient(#166C86 20%, #00C2AC 90%);
+  background-image: -moz-linear-gradient(#166C86 20%, #00C2AC 90%);
+  background-image: -o-linear-gradient(#166C86 20%, #00C2AC 90%);
+  background-image: linear-gradient(#166C86 20%, #00C2AC 90%);
+  color: #fff;
+}
+
+#seek-bar > a.ui-slider-handle,
+#verse-start-end-pos > div.ui-slider-range {
+  background: #46dab8;
+}
+
+.stop > span,
+.play > span,
+.restart > span,
+.restart-all > span,
+.pause > span {
+  color: #ff8500;
+}
+
+.stop-grey > span,
+.play-grey > span,
+.restart-grey > span,
+.restart-all-grey > span,
+.pause-grey > span {
+  color: #999 !important;
+}
+
+.toolbtn {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.toolbtn > span,
+#status-bar {
+  color: #46dab8;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+button.toolbtn > span:hover {
+  color: #fff;
+}
+
+hr.menuhr {
+  background-color: #1c9188;
+}
+
+.link-item-icon {
+  color: rgba(10, 63, 59, 0.44);
+}
+
+.tab-updates-count {
+  background-color: #1c9188;
+  color: #fff;
+}
+
+.sm2-bar-ui .sm2-main-controls,
+.sm2-bar-ui .sm2-playlist-drawer {
+  background-color: #1c9188;
+}
+
+h2.non-hideable-section-head,
+h2.hideable-section-head {
+  background-color: #648885;
+}
+
+.embedded-post blockquote {
+  border-left: 4px solid #1c9188;
+}
+
+.embedded-post h1, .embedded-post h2, .embedded-post h3 {
+  color: #1c9188;
+}

@@ -1,0 +1,15 @@
+@media (max-width : 568px) {
+  .easy-img { width: 90%; }
+}
+.listed-details {
+	padding-left: 1.5em;
+	color: #444;
+}
+question {
+	display:block;
+	font-weight:bold;
+}
+answer {
+	display:block;
+	padding-bottom:1em;
+}

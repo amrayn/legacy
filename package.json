@@ -1,0 +1,19 @@
+{
+  "name": "legacy",
+  "version": "1.16.75",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "private": true,
+  "devDependencies": {
+    "firewebkit-kube": "^1.0.4"
+  },
+  "registry": {
+    "scope": "amr",
+    "url": "ghcr.io"
+  },
+  "scripts": {
+    "test": "exit 0",
+    "postversion": "POSTVERSION=1 kube-build-image",
+    "apply": "kube-set-deploy amr"
+  }
+}

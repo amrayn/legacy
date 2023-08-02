@@ -1,0 +1,453 @@
+@font-face {
+  font-family: 'Cookie';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cookie-Regular'), url(https://fonts.gstatic.com/s/cookie/v7/crMuSvy3krjox1JAKfe7Ew.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Scheherazade';
+  src: url(/styles/font/ScheherazadeRegAAT.ttf) format("truetype-aat"),
+	url(/styles/font/ScheherazadeRegOT.ttf) format("opentype");
+}
+@font-face
+{
+	font-family: 'UthmaniScript';
+	src: url('/styles/font/UthmaniScript.eot');
+	src: url('/styles/font/UthmaniScript.eot?#iefix') format('embedded-opentype'),
+		url('/styles/font/UthmaniScript.ttf') format('truetype');
+}
+@font-face{
+	font-family:"mry_KacstQurn";
+	src:url("/styles/font/mry_KacstQurn.ttf") format('truetype');
+}
+@font-face
+{
+	font-family: 'MedinaMushaf';
+	src: url('/styles/font/me_quran_volt_newmet.ttf') format('truetype');
+}
+@font-face
+{
+	font-family: 'IndoPakScript';
+	font-weight: normal;
+	font-style: normal;
+	src: local("IndoPakScript"), url('/styles/font/PDMS_Saleem.ttf') format('truetype'), url('/styles/font/PDMS_Saleem.woff') format('woff');
+}
+@font-face
+{
+	font-family: 'TraditionalArabic';
+	src: url('/styles/font/trado.eot');
+	src: url('/styles/font/trado.eot?#iefix') format('embedded-opentype'),
+	url('/styles/font/trado.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'IslamicFont';
+	font-style: normal;
+	font-weight: normal;
+	src: url('/styles/font/PDMS_IslamicFont.eot');
+	src: url('/styles/font/PDMS_IslamicFont.eot?#iefix') format('embedded-opentype'),
+	url('/styles/font/PDMS_ISLAMICFONT.ttf') format('truetype'), url("/styles/font/PDMS_ISLAMICFONT.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: 'Lateef';
+	src: url(/styles/font/lateefregot-webfont.eot);
+	src: url(/styles/font/lateefregot-webfont.eot) format('embedded-opentype'),
+		url(/styles/font/lateefregot-webfont.woff) format('woff'),
+		url(/styles/font/lateefregot-webfont.ttf) format('truetype'),
+		url(/styles/font/lateefregot-webfont.svg) format('svg');
+	font-weight:400;
+	font-style:normal
+}
+
+@font-face {
+    font-family: 'Nafees';
+    src:url('/styles/font/nafees-nastaleeq-webfont.eot?#iefix') format('embedded-opentype'),
+        url('/styles/font/nafees-nastaleeq-webfont.woff') format('woff'),
+        url('/styles/font/nafees-nastaleeq-webfont.ttf') format('truetype'),
+        url('/styles/font/nafees-nastaleeq-webfont.svg#NafeesRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    line-height: 2;
+}
+
+@font-face {
+  font-family: 'Noto Serif Thai';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/notoserifthai/v1/NotoSerifThai-Regular.eot);
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/notoserifthai/v1/NotoSerifThai-Regular.eot?#iefix) format('embedded-opentype'),
+	   url(//themes.googleusercontent.com/static/fonts/earlyaccess/notoserifthai/v1/NotoSerifThai-Regular.woff2) format('woff2'),
+	   url(//themes.googleusercontent.com/static/fonts/earlyaccess/notoserifthai/v1/NotoSerifThai-Regular.woff) format('woff'),
+	   url(//themes.googleusercontent.com/static/fonts/earlyaccess/notoserifthai/v1/NotoSerifThai-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Amiri';
+  font-style: normal;
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/amiri/v2/Amiri-Regular.eot);
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/amiri/v2/Amiri-Regular.eot?#iefix) format('embedded-opentype'),
+	   url(//themes.googleusercontent.com/static/fonts/earlyaccess/amiri/v2/Amiri-Regular.woff2) format('woff2'),
+	   url(//themes.googleusercontent.com/static/fonts/earlyaccess/amiri/v2/Amiri-Regular.woff) format('woff'),
+	   url(//themes.googleusercontent.com/static/fonts/earlyaccess/amiri/v2/Amiri-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'me_quranR3HOQ';
+    src: url('/styles/font/me_quranR3HOQ.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lohit Devanagari';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/lohitdevanagari/v3/Lohit-Devanagari.eot);
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/lohitdevanagari/v3/Lohit-Devanagari.eot?#iefix) format('embedded-opentype'),
+	   url(//themes.googleusercontent.com/static/fonts/earlyaccess/lohitdevanagari/v3/Lohit-Devanagari.woff2) format('woff2'),
+	   url(//themes.googleusercontent.com/static/fonts/earlyaccess/lohitdevanagari/v3/Lohit-Devanagari.woff) format('woff'),
+	   url(//themes.googleusercontent.com/static/fonts/earlyaccess/lohitdevanagari/v3/Lohit-Devanagari.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lohit Tamil';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/lohittamil/v3/Lohit-Tamil.eot);
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/lohittamil/v3/Lohit-Tamil.eot?#iefix) format('embedded-opentype'),
+	   url(//themes.googleusercontent.com/static/fonts/earlyaccess/lohittamil/v3/Lohit-Tamil.woff2) format('woff2'),
+	   url(//themes.googleusercontent.com/static/fonts/earlyaccess/lohittamil/v3/Lohit-Tamil.woff) format('woff'),
+	   url(//themes.googleusercontent.com/static/fonts/earlyaccess/lohittamil/v3/Lohit-Tamil.ttf) format('truetype');
+}
+
+
+@font-face {
+	font-family: qalam;
+	src: local("Al Qalam Quran"), local("AlQalamQuran"), url("/styles/font/AlQalamQuran.woff2") format("woff2"), url("/styles/font/AlQalamQuran.woff") format("woff");
+	font-weight: normal;
+	font-style: normal
+}
+@font-face {
+    font-family: 'KFGQPC Uthman Taha Naskh';
+    src: url('/styles/font/KFGQPCUthmanTahaNaskh.eot');
+    src: local('KFGQPC Uthman Taha Naskh'),
+         url('/styles/font/KFGQPCUthmanTahaNaskh.eot?#iefix') format('embedded-opentype'),
+         url('/styles/font/KFGQPCUthmanTahaNaskh.woff2') format('woff2'),
+         url('/styles/font/KFGQPCUthmanTahaNaskh.woff') format('woff'),
+         url('/styles/font/KFGQPCUthmanTahaNaskh.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KFGQPC Uthman Taha Naskh';
+    src: url('/styles/font/KFGQPCUthmanTahaNaskh-Bold.eot');
+    src: local('KFGQPC Uthman Taha Naskh Bold'),
+         url('/styles/font/KFGQPCUthmanTahaNaskh-Bold.eot?#iefix') format('embedded-opentype'),
+         url('/styles/font/KFGQPCUthmanTahaNaskh-Bold.woff2') format('woff2'),
+         url('/styles/font/KFGQPCUthmanTahaNaskh-Bold.woff') format('woff'),
+         url('/styles/font/KFGQPCUthmanTahaNaskh-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+	font-family: Times New Roman, Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+}
+
+#main-contents-head,#main-contents {
+	line-height: normal;
+}
+
+.script-traditional {
+	font-family: TraditionalArabic !important;
+}
+
+.script-uthmani {
+	font-family: UthmaniScript !important;
+}
+
+.script-islamicfont {
+	font-family: IslamicFont !important;
+}
+
+.script-scheherazade {
+	font-family: Scheherazade !important;
+}
+
+.script-qalam {
+  font-family: qalam !important;
+}
+
+.script-kingfahd {
+  font-family: 'KFGQPC Uthman Taha Naskh' !important;
+}
+
+.script-uthmani-bold {
+	font-family: UthmaniScript !important;
+	font-weight: bold;
+}
+
+.script-medina {
+	font-family: MedinaMushaf !important;
+}
+
+.script-mry {
+	font-family: mry_KacstQurn !important;
+}
+
+.script-indopak {
+	font-family: IndoPakScript !important;
+}
+/*
+.script-indopak-old {
+	font-family: IndoPakScriptOld !important;
+}*/
+
+.script-thai {
+	font-family: Noto Serif Thai !important;
+}
+
+.script-urdu {
+	font-family: Nafees !important;
+}
+
+.script-persian {
+	font-family: Lateef !important;
+}
+
+.script-lateef {
+	font-family: Lateef !important;
+}
+
+.script-nafees {
+	font-family: Nafees !important;
+}
+
+.script-eng {
+	font-family: Times New Roman, Arial, Helvetica, sans-serif !important;
+}
+
+.script-amiri {
+	font-family: Amiri !important;
+}
+
+.script-tamil {
+	font-family: Lohit Tamil !important;
+}
+
+.script-hindi {
+	font-family: Lohit Devanagari !important;
+}
+
+.script-me-quran {
+	font-family: 'me_quranR3HOQ' !important;
+}
+
+.trans-tafs-arabic {
+	font-size: 29px;
+}
+.rukuh > span {
+  background-color: #00AD31;
+  border-radius: 12px;
+  color: #000;
+  padding-left: 14px;
+  padding-right: 13px;
+  font-size: 12px;
+  font-weight: bold;
+  padding-bottom: 7px;
+
+}
+.arabic {
+	direction:rtl;
+	text-align:right;
+	margin: 0px 0px 0px 0px;
+	padding: 0cm 0cm;
+	font-style: normal;
+}
+
+.ayah, .ayah-word-by-word, .ayah-tafsir {
+	font-size: 0px;
+	vertical-align: middle;
+}
+
+.hide-feature {
+	display: none;
+}
+
+.ayah-translation, .ayah-transliteration  {
+	font-size: 0px;
+	vertical-align: middle;
+}
+
+.righttoleft {
+	direction:rtl;
+	text-align:right;
+}
+.leftoright {
+	text-align:left;
+}
+
+button.toolbtn {
+	border-style:none;
+	background-color: none;
+	box-shadow: none;
+}
+
+.highlighted-ayah {
+	color:#B80000;
+}
+.word-by-word-style-0-2-div {
+	display:inline-block;
+	text-align:center;
+	border-left:1px dashed #999;
+	padding-left:0.25em;
+	padding-right:0.25em;
+}
+.word-by-word-mean, .word-by-word-orig {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+.show-foot-note, .hide-foot-note {
+	cursor: pointer;
+	text-decoration: underline;
+}
+a.footnote-ref-link:link {
+	text-decoration: none;
+}
+a.footnote-ref-link:visited {
+	text-decoration: none;
+}
+a.footnote-ref-link:hover {
+	text-decoration: underline;
+}
+a.footnote-ref-link:active {
+	text-decoration: underline;
+}
+a.footnote-ref-link, a.footnote-ref-link:visited, a.footnote-ref-link:hover, a.footnote-ref-link:active {
+	color: inherit;
+}
+.tafsir-quran, .tafsir-hadith {
+	text-align: center;
+}
+.tafsir-heading {
+	font-weight:bold;
+	text-decoration: underline;
+}
+.resource-label {
+	font-family: Scheherazade;
+	font-size: 1.4em;
+	color: #999999;
+	margin-top: 1em;
+}
+.taf-ref-1 {
+	color: rgb(97, 49, 104);
+}
+.taf-ref-2 {
+	color: rgb(11, 109, 70);
+}
+.taf-ref-3 {
+	color: rgb(0, 39, 139);
+}
+.taf-ref-4 {
+	color: rgb(133, 52, 14);
+}
+.taf-tr {
+	font-style: italic;
+	font-size: 0.85em;
+}
+
+.taf-head {
+	font-weight: bold;
+	display: block;
+	padding-top: 1em;
+}
+.taf-foot > .n::before {
+	content: "[";
+}
+.taf-foot > .n::after {
+	content: "]";
+}
+.taf-foot > .n {
+	margin-left: 0.5em;
+	margin-right: 0.4em;
+	vertical-align: super;
+	font-size:0.5em;
+	cursor: pointer;
+}
+.taf-foot > .t {
+	color: #3A3A3A;
+	background-color: rgba(255, 255, 255, 0.95);
+	position:absolute;
+	display:none;
+	cursor: pointer;
+	font-size: 0.5em;
+	border: 1px solid black;
+	padding: 0.5em;
+}
+
+.footnote-qref-link {
+	color: inherit !important;
+}
+/** FOLLOWING IS VALID FOR NEW TAFSIRS */
+/** SUBJECT TO CHANGE */
+
+/** Tafsir arabic - Quran and Hadith */
+.taf-arb {
+	display:block;
+	text-align:center;
+	font-family:Lateef;
+	font-style: normal;
+}
+.cont-saw:after {
+	content:"ﷺ";
+}
+.cont-ra:after {
+	content:"رضي الله عنه";
+}
+.cont-raha:after {
+	content:"رضي الله عنها";
+}
+.cont-as:after {
+	content:"عليه والسلام";
+}
+.taf-arb::before {
+	content: "("; /* This will be changed to special char[2] / special char[1] and will have custom font*/
+}
+.taf-arb::after {
+	content: ")"; /* This will be changed to special char[2] / special char[1] and will have custom font*/
+}
+/** Tafsir translation of Quran and Hadith */
+.taf-tr-had::before {
+	content: "<"; /* This will be changed to special char[2] / special char[1] and will have custom font*/
+}
+.taf-tr-had::after {
+	content: ">"; /* This will be changed to special char[2] / special char[1] and will have custom font*/
+}
+.taf-tr-qur::before {
+	content: "("; /* This will be changed to special char[2] / special char[1] and will have custom font*/
+}
+.taf-tr-qur::after {
+	content: ")"; /* This will be changed to special char[2] / special char[1] and will have custom font*/
+}
+/** Tafsir ayah end - This is useful for continuous viewing and should only be enabled then */
+/*.taf-ay-end {
+	display: block;
+}*/
+/*******************************************/
+
+/** Quran seperator */
+.q-sep1 { /* side-by-side */
+	border-right: 1px solid #3F260A;
+    padding-left: 4px;
+    padding-right: 2px;
+}
+.q-sep2 { /* verse-by-verse */
+	border-bottom: 1px dashed #999;
+    padding-bottom: 10px;
+}
+.q-sep3 { /* continuous */
+  border-bottom: 1px solid #3F260A;
+  padding-bottom: 40px;
+}

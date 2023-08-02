@@ -1,0 +1,276 @@
+RewriteEngine on
+
+RewriteBase /
+
+Redirect 301 /recitations /audio/QuranRecitations
+Redirect 301 /blog /articles
+Redirect 301 /pdfs /books
+Redirect 301 /faq /about
+Redirect 301 /login /signin
+Redirect 301 /donation /contribute
+Redirect 301 /policy /privacy
+Redirect 301 /support /contribute
+
+# Error pages
+RewriteRule ^error404([\/]*)$ /404.php [QSA]
+
+RewriteRule ^sitemaps/(.*)$ /live/sitemaps/$1 [QSA]
+
+# Resources Web services
+RewriteRule ^rc/svc/upload-audio$ /resources/services/audio-upload.php [QSA]
+RewriteRule ^rc/svc/upload-book$ /resources/services/book-upload.php [QSA]
+RewriteRule ^rc/svc/upload-profile-photo$ /resources/services/profile-photo-upload.php [QSA]
+RewriteRule ^rc/tools/filesize /resources/tools/getsize.php [QSA]
+RewriteRule ^rc/tools/pagecount /resources/tools/getpagecount.php [QSA]
+RewriteRule ^rc/tools/length /resources/tools/getlength.php [QSA]
+
+# Web services
+RewriteRule ^svc/signin([\/]*)$ /services/signin.php [QSA]
+RewriteRule ^svc/signin/reg([\/]*)$ /services/signin.php [QSA]
+RewriteRule ^svc/signintoken([\/]*)$ /services/signin-token.php [QSA]
+RewriteRule ^svc/versignintoken/(.*)([\/]*)$ /services/verify-signin-token.php?t=$1 [QSA]
+RewriteRule ^svc/signinqr$ /services/signin-qrcode.php [QSA]
+RewriteRule ^svc/sync-fav-hadith([\/]*)$ /services/sync-favourite-hadiths.php [QSA]
+RewriteRule ^svc/sync-hadith-notes([\/]*)$ /services/sync-hadith-notes.php [QSA]
+RewriteRule ^svc/edit-hadith-note/(.*)([\/]*)$ /services/edit-hadith-note.php?publicId=$1 [QSA]
+RewriteRule ^svc/signup([\/]*)$ /services/signup.php [QSA]
+RewriteRule ^svc/token([\/]*)$ /services/gettoken.php [QSA]
+RewriteRule ^svc/config([\/]*)$ /services/getconfigs.php [QSA]
+RewriteRule ^svc/health([\/]*)$ /services/health-check.php [QSA]
+RewriteRule ^svc/hadithtoday([\/]*)$ /services/hadith-today.php [QSA]
+RewriteRule ^svc/bookmark([\/]*)$ /services/bookmark.php [QSA]
+RewriteRule ^svc/user/update([\/]*)$ /services/user-updater.php [QSA]
+RewriteRule ^svc/user/search([\/]*)$ /services/user-searcher.php [QSA]
+RewriteRule ^svc/user/notify([\/]*)$ /services/user-notifier.php [QSA]
+RewriteRule ^svc/hadith([\/]*)$ /services/get-hadith.php [QSA]
+RewriteRule ^wsvc/hadith([\/]*)$ /services/get-es-hadith.php [QSA]
+RewriteRule ^svc/hadinote([\/]*)$ /services/get-hadith.php?gn [QSA]
+RewriteRule ^svc/hadireview([\/]*)$ /services/get-hadith.php?chkr [QSA]
+RewriteRule ^svc/edithadith([\/]*)$ /services/edit-hadith.php [QSA]
+RewriteRule ^svc/tzu([\/]*)$ /services/time-zone-update.php [QSA]
+RewriteRule ^svc/searchcount([\/]*)$ /services/search-count.php [QSA]
+RewriteRule ^svc/searchcount/([a-zA-Z]+)([\/]*)$ /services/search-count.php?context=$1 [QSA]
+RewriteRule ^svc/(encrypt|decrypt|adv_encrypt)([\/]*)$ /services/encrypt-decrypt-string.php?$1 [QSA]
+RewriteRule ^svc/notifications$ /services/notifications.php [QSA]
+RewriteRule ^svc/cd$ /services/update-config-data.php [QSA]
+RewriteRule ^svc/release$ /services/update-config-data.php?next-release [QSA]
+RewriteRule ^svc/captcha$ /core/utils/3rd-party/captcha/captcha.php [QSA]
+RewriteRule ^svc/uhk$ /services/user-last-seen.php [QSA]
+RewriteRule ^svc/lvi$ /services/audio-view-increment.php [QSA]
+RewriteRule ^svc/nlc$ /services/new-audio-count.php [QSA]
+RewriteRule ^svc/nbc$ /services/new-book-count.php [QSA]
+RewriteRule ^svc/buc$ /services/new-articles-count.php [QSA]
+RewriteRule ^svc/uc$ /services/updates-count.php [QSA]
+RewriteRule ^svc/fl$ /services/fetch-audios.php [QSA]
+RewriteRule ^svc/fe/fl$ /services/fe/fetch-audios.php [QSA]
+RewriteRule ^svc/fb$ /services/fetch-articles.php [QSA]
+RewriteRule ^svc/posfb$ /services/fetch-articles.php?poslink [QSA]
+RewriteRule ^svc/fbk$ /services/fetch-book.php [QSA]
+RewriteRule ^svc/fetch-related-audios$ /services/fetch-related-audios.php [QSA]
+RewriteRule ^svc/edit-audio$ /services/edit-audio.php [QSA]
+RewriteRule ^svc/edit-speaker$ /services/edit-speaker.php [QSA]
+RewriteRule ^svc/edit-series$ /services/edit-series.php [QSA]
+RewriteRule ^svc/add-audio$ /services/add-audio.php [QSA]
+RewriteRule ^svc/add-series$ /services/add-series.php [QSA]
+RewriteRule ^svc/add-speaker$ /services/add-speaker.php [QSA]
+RewriteRule ^svc/upload-media$ /services/upload-history.php [QSA]
+RewriteRule ^svc/edit-book$ /services/edit-book.php [QSA]
+RewriteRule ^svc/edit-book-volume$ /services/edit-book-volume.php [QSA]
+RewriteRule ^svc/add-book$ /services/add-book.php [QSA]
+RewriteRule ^svc/add-book-volume$ /services/add-book-volume.php [QSA]
+RewriteRule ^svc/edit-audio-note$ /services/edit-audio-note.php [QSA]
+RewriteRule ^svc/edit-audio-note-items$ /services/edit-audio-note-items.php [QSA]
+RewriteRule ^svc/check-audio-note/(.*)$ /services/check-audio-note-availability.php?audioPublicId=$1 [QSA]
+RewriteRule ^svc/qsupdate$ /services/quran-studies-update.php [QSA]
+RewriteRule ^svc/ssrcv$ /services/screenshot-receiver.php [QSA]
+RewriteRule ^svc/investreqchk$ /services/screenshot-request-checker.php [QSA]
+RewriteRule ^svc/investreq$ /services/screenshot-request.php [QSA]
+RewriteRule ^svc/search/([a-zA-Z]+)([\/]*)$ /services/search.php?c=$1 [QSA]
+RewriteRule ^svc/searchlabels/([a-zA-Z]+)([\/]*)$ /services/search-labels.php?c=$1 [QSA]
+
+# Admin only services
+RewriteRule ^svc/admin/get-audio-info$ /services/admin-only/get-audio-info.php [QSA]
+
+# React pages web services (props)
+# RewriteRule ^fe/hadith([\/]*)$ /services/fe/fetch-hadith.php [QSA]
+
+# Pages
+####################################### QURAN #######################################
+RewriteRule ^([0-9]+)/([0-9]+)-([0-9]+)([\/]*)$ /pages/quran/read.php?go=$1:$2-$3 [QSA]
+RewriteRule ^([0-9]+)/([0-9]+)([\/]*)$ /pages/quran/read.php?go=$1:$2 [QSA]
+RewriteRule ^([0-9]+)([\/]*)$ /pages/quran/read.php?go=$1 [QSA]
+RewriteRule ^([0-9]+):([0-9]+)-([0-9]+)([\/]*)$ /$1/$2-$3 [QSA]
+RewriteRule ^([0-9]+):([0-9]+)([\/]*)$ /$1/$2 [QSA]
+
+RewriteRule ^quran([\/]*)$ /index.php [QSA]
+RewriteRule ^quran/embed([\/]*)$ /pages/quran/embed-gzip.php?type=foreign [QSA]
+RewriteRule ^quran/embed-local([\/]*)$ /pages/quran/embed-gzip.php?type=local&ref=0 [QSA]
+RewriteRule ^quran/pdfprint([\/]*)$ /pages/quran/embed-gzip.php?type=pdf&ref=1&title&txttitle&title-mean&exfn&fnclr [QSA]
+RewriteRule ^quran/pdf([\/]*)$ /pages/quran/pdf.php [QSA]
+RewriteRule ^quran/mp3([\/]*)$ /pages/quran/part-mp3.php [QSA]
+RewriteRule ^quran/intro([\/]*)$ /pages/quran/intro.php?surah=1 [QSA]
+RewriteRule ^quran/intro/([0-9]+)([\/]*)$ /pages/quran/intro.php?surah=$1 [QSA]
+
+RewriteRule ^quran/mushaf$ /pages/quran/emushaf.php?go=1 [QSA]
+RewriteRule ^quran/mushaf/([0-9]+)$ /pages/quran/emushaf.php?go=$1 [QSA]
+RewriteRule ^quran/mushaf/([0-9]+)/([0-9]+)([\/]*)$ /pages/quran/emushaf.php?go=$1:$2 [QSA]
+RewriteRule ^quran/mushaf/p([0-9]+)([\/]*)$ /pages/quran/emushaf.php?page=$1 [QSA]
+
+RewriteRule ^study/memorization([\/]*)$ /pages/studytools/memorization.php [QSA]
+
+####################################### HADITH #######################################
+
+## Backward compatible
+RewriteRule ^abudawud(.*) /abudawood$1 [L,R=301]
+
+RewriteRule ^hadith/1/([0-9]+)/([0-9]+)/([0-9]+)([\/]*)$ /bukhari/$2/$3$4 [L,R=301]
+RewriteRule ^hadith/6/([0-9]+)/([0-9]+)/([0-9]+)([\/]*)$ /tirmidhi/$2/$3$4 [L,R=301]
+RewriteRule ^hadith/7/([0-9]+)/([0-9]+)/([0-9]+)([\/]*)$ /ibnmajah/$2/$3$4 [L,R=301]
+RewriteRule ^hadith/9/([0-9]+)/([0-9]+)/([0-9]+)([\/]*)$ /nasai/$2/$3$4 [L,R=301]
+RewriteRule ^hadith/1/([0-9]+)/([0-9]+)([\/]*)$ /bukhari/$1/$2$3 [L,R=301]
+RewriteRule ^hadith/2/([0-9]+)/([0-9]+)([\/]*)$ /muslim/$1/$2$3 [L,R=301]
+RewriteRule ^hadith/3/([0-9]+)/([0-9]+)([\/]*)$ /abudawood/$1/$2$3 [L,R=301]
+RewriteRule ^hadith/4/([0-9]+)/([0-9\.]+)([\/]*)$ /malik/$1/$2$3 [L,R=301]
+RewriteRule ^hadith/5/([0-9]+)([\/]*)$ /qudsi/$1$2 [L,R=301]
+RewriteRule ^hadith/6/([0-9]+)/([0-9]+)([\/]*)$ /tirmidhi/$1/$2$3 [L,R=301]
+RewriteRule ^hadith/7/([0-9]+)/([0-9]+)([\/]*)$ /ibnmajah/$1/$2$3 [L,R=301]
+RewriteRule ^hadith/8/([0-9]+)([\/]*)$ /nawawi/$1$2 [L,R=301]
+RewriteRule ^hadith/9/([0-9]+)/([0-9]+)([\/]*)$ /nasai/$1/$2$3 [L,R=301]
+RewriteRule ^hadith/10/([0-9]+)/([0-9]+)([\/]*)$ /riyadussaliheen/$1/$2$3 [L,R=301]
+
+RewriteRule ^edithadith/([0-9]+)([\/]*)$ /pages/hadith/edit.php?id=$1 [QSA]
+RewriteRule ^hadith([\/]*)$ /pages/hadith/index.php [QSA]
+RewriteRule ^hadith/review([\/]*)$ /pages/hadith/review.php [QSA]
+RewriteRule ^(qudsi|nawawi)/([0-9a-zA-Z\.]+)([\/]*)$ /pages/hadith/read.php?collectionName=$1&hadith=$2 [QSA]
+RewriteRule ^(bukhari|muslim|abudawood|malik|qudsi|tirmidhi|ibnmajah|nawawi|nasai|riyadussaliheen|shamail)([\/]*)$ /pages/hadith/read.php?collectionName=$1 [QSA]
+RewriteRule ^(bukhari|muslim|abudawood|malik|tirmidhi|ibnmajah|nasai|riyadussaliheen|shamail)/([0-9a-zA-Z\.]+)([\/]*)$ /pages/hadith/read.php?collectionName=$1&book=$2 [QSA]
+RewriteRule ^(bukhari|muslim|abudawood|malik|tirmidhi|ibnmajah|nasai|riyadussaliheen|shamail)/([0-9]+)/([0-9a-zA-Z\.]+)([\/]*)$ /pages/hadith/read.php?collectionName=$1&book=$2&hadith=$3 [QSA]
+RewriteRule ^(bukhari|muslim|abudawood|malik|tirmidhi|ibnmajah|nasai|riyadussaliheen|shamail)/([0-9]+):([0-9a-zA-Z\.]+)([\/]*)$ /pages/hadith/read.php?collectionName=$1&book=$2&hadith=$3 [QSA]
+RewriteRule ^(qudsi|nawawi)/([0-9a-zA-Z\.]+)/edit([\/]*)$ /pages/hadith/edit.php?collectionName=$1&hadith=$2 [QSA]
+RewriteRule ^(bukhari|muslim|abudawood|malik|qudsi|tirmidhi|ibnmajah|nawawi|nasai|riyadussaliheen|shamail)/edit([\/]*)$ /pages/hadith/edit.php?collectionName=$1 [QSA]
+RewriteRule ^(bukhari|muslim|abudawood|malik|tirmidhi|ibnmajah|nasai|riyadussaliheen|shamail)/([0-9a-zA-Z\.]+)/edit([\/]*)$ /pages/hadith/edit.php?collectionName=$1&book=$2 [QSA]
+RewriteRule ^(bukhari|muslim|abudawood|malik|tirmidhi|ibnmajah|nasai|riyadussaliheen|shamail)/([0-9]+)/([0-9a-zA-Z\.]+)/edit([\/]*)$ /pages/hadith/edit.php?collectionName=$1&book=$2&hadith=$3 [QSA]
+RewriteRule ^(bukhari|muslim|abudawood|malik|tirmidhi|ibnmajah|nasai|riyadussaliheen|shamail)/([0-9]+):([0-9a-zA-Z\.]+)/edit([\/]*)$ /pages/hadith/edit.php?collectionName=$1&book=$2&hadith=$3 [QSA]
+
+## Embed
+RewriteRule ^(qudsi|nawawi)/([0-9a-zA-Z\.]+)/embed([\/]*)$ /pages/hadith/embed.php?collectionName=$1&hadith=$2 [QSA]
+RewriteRule ^(bukhari|muslim|abudawood|malik|tirmidhi|ibnmajah|nasai|riyadussaliheen|shamail)/([0-9]+)/([0-9a-zA-Z\.]+)/embed([\/]*)$ /pages/hadith/embed.php?collectionName=$1&book=$2&hadith=$3 [QSA]
+
+####################################### SEARCH #######################################
+RewriteRule ^search([\/]*)$ /pages/search/index.php [QSA]
+RewriteRule ^search/tips([\/]*)$ /pages/search/search-tips.php [QSA]
+RewriteRule ^search/lectures([\/]*)$ /pages/search/index.php?context=audio [QSA]
+## Use live search for hadith search
+RewriteRule ^search/hadith([\/]*)$ /pages/live-search/index.php?t=hadith [QSA]
+RewriteRule ^search/quran([\/]*)$ /pages/live-search/index.php?t=quran [QSA]
+RewriteRule ^search/articles([\/]*)$ /pages/live-search/index.php?t=articles [QSA]
+RewriteRule ^search/([a-zA-Z]+)([\/]*)$ /pages/search/index.php?context=$1 [QSA]
+# RewriteRule ^livesearch/([a-zA-Z]+)([\/]*)$ /pages/live-search/index.php?t=$1 [QSA]
+
+###################################### AUDIO #####################################
+RewriteRule ^audio([\/]*)$ /pages/audio/index.php [QSA]
+RewriteRule ^manage/audio/edit/(.*)([\/]*)$ /pages/audio/edit-audio.php?audioPublicId=$1 [QSA]
+RewriteRule ^manage/audio/editspeaker/(.*)([\/]*)$ /pages/audio/edit-speaker.php?speakerSearchName=$1 [QSA]
+RewriteRule ^manage/audio/editseries/(.*)([\/]*)$ /pages/audio/edit-series.php?seriesSearchName=$1 [QSA]
+RewriteRule ^manage/audio/add/(.*)([\/]*)$ /pages/audio/add-audio.php?speakerSearchName=$1 [QSA]
+RewriteRule ^manage/audio/addseries/(.*)([\/]*)$ /pages/audio/add-series.php?speakerSearchName=$1 [QSA]
+RewriteRule ^manage/audio/addspeaker([\/]*)$ /pages/audio/add-speaker.php [QSA]
+RewriteRule ^manage/audio/writenote([\/]*)$ /pages/audio/write-note.php [QSA]
+RewriteRule ^manage/audio/writenote/(.*)([\/]*)$ /pages/audio/write-note.php?audioNotePublicId=$1 [QSA]
+RewriteRule ^audio/listen/([-a-zA-Z0-9]+)/([-a-zA-Z0-9]+)([\/]*)$ /pages/audio/listen-audio.php?speakerSearchName=$1&audioSearchName=$2 [QSA]
+RewriteRule ^audio/listen/([-a-zA-Z0-9]+)/([-a-zA-Z0-9]+)/embed([\/]*)$ /pages/audio/embed-audio.php?speakerSearchName=$1&audioSearchName=$2 [QSA]
+RewriteRule ^audio/category/([-a-zA-Z0-9]+)([\/]*)$ /pages/audio/view-by-category.php?category=$1 [QSA]
+RewriteRule ^audio/category/([-a-zA-Z0-9]+)/feed([\/]*)$ /live/rss-feeds/audio_category_$1.xml [QSA]
+RewriteRule ^audio/([-a-zA-Z0-9]+)/category/([-a-zA-Z0-9]+)([\/]*)$ /pages/audio/list-for-speaker-by-category.php?speakerSearchName=$1&category=$2 [QSA]
+RewriteRule ^audio/([-a-zA-Z0-9]+)/category/([-a-zA-Z0-9]+)/feed([\/]*)$  /live/rss-feeds/audio_$1_category_$2.xml [QSA]
+RewriteRule ^audio/([-a-zA-Z0-9]+)/([-a-zA-Z0-9]+)/([-a-zA-Z0-9]+)([\/]*)$ /pages/audio/listen-audio.php?speakerSearchName=$1&seriesSearchName=$2&audioSearchName=$3 [QSA]
+RewriteRule ^audio/([-a-zA-Z0-9]+)/([-a-zA-Z0-9]+)/([-a-zA-Z0-9]+)/embed([\/]*)$ /pages/audio/embed-audio.php?speakerSearchName=$1&seriesSearchName=$2&audioSearchName=$3 [QSA]
+RewriteRule ^audio/listen/(.*)([\/]*)$ /pages/audio/listen-audio.php?audioPublicId=$1 [QSA]
+RewriteRule ^audio/embed/(.*)([\/]*)$ /pages/audio/embed-audio.php?audioPublicId=$1 [QSA] # No longer used
+RewriteRule ^audio/stream/(.*)([\/]*)$ /pages/audio/stream-audio.php?audioPublicId=$1 [QSA] # No longer used
+RewriteRule ^audio/thumb/(.*)([\/]*)$ /pages/audio/thumbnail.php?publicId=$1&audio [QSA] # No longer used
+RewriteRule ^audio/thumbseries/(.*)([\/]*)$ /pages/audio/thumbnail.php?publicId=$1&audioSeries [QSA]
+RewriteRule ^audio/series/(.*)([\/]*)$ /pages/audio/view-series.php?seriesPublicId=$1 [QSA]
+RewriteRule ^audio/feed([\/]*)$ /live/rss-feeds/audio.xml [QSA]
+RewriteRule ^audio/([-a-zA-Z0-9]+)/feed([\/]*)$ /live/rss-feeds/audio_$1.xml [QSA]
+RewriteRule ^audio/([-a-zA-Z0-9]+)([\/]*)$ /pages/audio/list-for-speaker.php?speakerSearchName=$1 [QSA]
+RewriteRule ^audio/([-a-zA-Z0-9]+)/([-a-zA-Z0-9]+)/feed([\/]*)$ /live/rss-feeds/audio_$1_$2.xml [QSA] # Series by speaker
+RewriteRule ^audio/([-a-zA-Z0-9]+)/([-a-zA-Z0-9]+)([\/]*)$ /pages/audio/view-series.php?speakerSearchName=$1&seriesSearchName=$2 [QSA]
+
+###################################### BOOK #####################################
+RewriteRule ^books([\/]*)$ /pages/books/index.php [QSA]
+RewriteRule ^manage/books/add([\/]*)$ /pages/books/add-book.php [QSA]
+RewriteRule ^manage/books/edit/(.*)([\/]*)$ /pages/books/edit-book.php?bookPublicIdOrSearchName=$1 [QSA]
+RewriteRule ^manage/books/addvolume/(.*)([\/]*)$ /pages/books/add-volume.php?bookPublicIdOrSearchName=$1 [QSA]
+RewriteRule ^manage/books/editvolume/(.*)([\/]*)$ /pages/books/edit-volume.php?bookVolumePublicId=$1 [QSA]
+RewriteRule ^books/category/([-a-zA-Z0-9]+)([\/]*)$ /pages/books/view-category.php?category=$1 [QSA]
+RewriteRule ^books/filter$ /pages/books/view-filter.php? [QSA]
+RewriteRule ^books/category/([-a-zA-Z0-9]+)/feed([\/]*)$ /live/rss-feeds/books_$1.xml [QSA]
+RewriteRule ^books/feed([\/]*)$ /live/rss-feeds/books.xml [QSA]
+RewriteRule ^books/([-a-zA-Z0-9]+)([\/]*)$ /pages/books/view-book.php?bookSearchName=$1 [QSA]
+RewriteRule ^books/thumb/(.*)$ /pages/books/thumbnail.php?publicId=$1&audio [QSA]
+RewriteRule ^books/thumbv/(.*)$ /pages/books/thumbnail.php?publicId=$1&volume [QSA]
+RewriteRule ^books/view/(.*)$ /pages/books/view-pdf.php?bookVolumePublicId=$1 [QSA]
+
+###################################### BLOG #####################################
+RewriteRule ^articles([\/]*)$ /pages/articles/index.php [QSA]
+RewriteRule ^articles/([-a-zA-Z0-9]+)([\/]*)$ /pages/articles/view-post.php?slug=$1 [QSA]
+RewriteRule ^manage/articles/edit/([-a-zA-Z0-9]+)([\/]*)$ /pages/articles/edit.php?slug=$1 [QSA]
+RewriteRule ^articles/category/([-a-zA-Z0-9]+)([\/]*)$ /pages/articles/view-category.php?slug=$1 [QSA]
+RewriteRule ^articles/tagged/([-a-zA-Z0-9]+)([\/]*)$ /pages/articles/view-tag.php?slug=$1 [QSA]
+RewriteRule ^articles/tag/([-a-zA-Z0-9]+)([\/]*)$ /pages/articles/tagged/$1 [L,R=301,NE]
+
+###################################### ACCOUNT #####################################
+RewriteRule ^signin/fb([\/]*)$ /pages/account/fb-callback.php [QSA]
+RewriteRule ^signin/gplus([\/]*)$ /pages/account/gp-callback.php [QSA]
+RewriteRule ^signin([\/]*)$ /pages/account/signin.php [QSA]
+RewriteRule ^signout([\/]*)$ /pages/account/signout.php [QSA]
+RewriteRule ^settings([\/]*)$ /pages/account/settings.php [QSA]
+RewriteRule ^notifications/view([\/]*)$ /pages/account/view-notification.php [QSA]
+RewriteRule ^notifications([\/]*)$ /pages/account/notifications.php [QSA]
+RewriteRule ^user/([a-zA-Z0-9\-\._]+)([\/]*)$ /pages/account/profile.php?userId=$1 [QSA]
+RewriteRule ^admin([\/]*)$ /pages/admin/index.php [QSA]
+
+####################################### ABOUT #######################################
+RewriteRule ^contribute([\/]*)$ /pages/about/contribute.php [QSA]
+RewriteRule ^about([\/]*)$ /pages/about/index.php [QSA]
+RewriteRule ^copyright([\/]*)$ /pages/about/copyright.php [QSA]
+RewriteRule ^privacy([\/]*)$ /pages/about/privacy.php [QSA]
+
+####################################### OTHERS #######################################
+RewriteRule ^email/(.*)([\/]*)$ /pages/view-email.php?publicId=$1 [QSA]
+
+<IfModule mod_deflate.c>
+  SetOutputFilter DEFLATE
+</IfModule>
+
+<FilesMatch "\.mp3$">
+  SetEnv no-gzip 1
+</FilesMatch>
+
+<IfModule mod_expires.c>
+  # Enable expirations
+  ExpiresActive On
+
+  # Default directive
+  ExpiresDefault "access plus 1 month"
+
+  # My favicon
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Images
+  ExpiresByType image/gif "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/jpg "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 month"
+
+  # CSS
+  ExpiresByType text/css "access plus 1 month"
+
+  # Javascript
+  ExpiresByType application/javascript "access plus 1 year"
+</IfModule>
+
+Header add Access-Control-Allow-Origin "*"
+Header add Access-Control-Allow-Methods: "POST, GET"

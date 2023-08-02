@@ -1,0 +1,270 @@
+.body-head,
+.more-menu,
+#foot-contents {
+  background-color: #45545d;
+  border-bottom-color: #273035;
+  color: #fff;
+}
+
+
+@media (min-width: 530px) {
+  .body-head, #foot-contents {
+    background-image: url(//amrayn.com/assets/images/themes-assets-rebrand/background-slate.jpg);
+  }
+}
+
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: #556a71;
+  border-color: #45545d;
+}
+
+.context-list > a.selected-context,
+.more-menu > ul > li:hover,
+.context-list > a:hover,
+.context-list-a-hover {
+  background: #273035;
+}
+
+a.link-small-icon:hover,
+span.link-small-icon:hover {
+  color: #000;
+}
+
+#foot-contents a.popular-link {
+  color: #fff;
+}
+
+#header-bar,.context-list {
+  border-bottom-color: #273035 !important;
+}
+
+.more-menu {
+  border-color: #273035;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #C5C5C5, 0 0 5px #fff;
+}
+
+.next-page:hover,
+.prev-page:hover {
+  color: #45545d;
+  background-color: transparent;
+  border-color: #45545d;
+}
+
+.share-btn:hover {
+  background: #030303;
+}
+
+.ayah-alt2 {
+  background-color: rgba(255, 157, 6, 0.11);
+}
+
+.search-item-heading {
+  background-color: rgba(27, 24, 24, 0.18);
+  color: #000;
+}
+
+.search-item-heading > a {
+  background-color: #45545d;
+  color: #fff !important;
+}
+
+.search-item-alt {
+  background-color: rgba(3, 3, 3, 0.11);
+}
+
+div.search-item-heading > a:hover {
+  color: #D3D3D2 !important;
+  background-color: #000;
+}
+
+.search-bar2,
+.search-bar {
+  background-position: -11px -116px;
+  background-color: #fff;
+  color: #000;
+}
+
+.spinner > .spinner-icon {
+  border-top-color: #45545d;
+  border-left-color: #45545d;
+  color: #45545d;
+}
+
+.fav:before,
+.bookmarked:before,
+.filled-fa:before,
+.no-fav:hover::before,
+.not-bookmarked:hover::before {
+  color: #45545d;
+}
+
+.hadith-nav > button {
+  background: transparent;
+  color: #222;
+}
+
+.tabs a:focus,
+.tabs #current {
+  border-bottom-color: #45545D;
+}
+
+.tabs a:hover {
+  border-bottom-color: rgba(69, 84, 93, 0.75);
+}
+
+.notification-item.notification-unread,
+#user-bar .notification-more-avail {
+  background-color: #fce1cf;
+}
+
+a.list-link-item:hover,
+a.chap-link-item:hover,
+.other-search-types-item:hover,
+.notification-item:hover {
+  background-color: rgba(69, 84, 93, 0.25);
+}
+
+.logohq,.large-logo {
+  content: url('//cdn.amrayn.com/assets/images/logo-hq.png?v=6');
+}
+
+#logoabout {
+  content: url('//cdn.amrayn.com/assets/images/logo-about.png?v=6');
+}
+
+.search-types {
+  background-color: rgba(69, 84, 93, 0.25);
+  border-color: rgba(69, 84, 93, 1) !important;
+}
+
+.search-types > .search-type {
+  color: #45545d;
+}
+
+section.bottom-menu {
+  background: #273035;
+}
+
+.ui-state-active .ui-icon {
+  background-image: url(jquery-ui-1.11.1.custom/images/ui-icons_fff_256x240.png);
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-widget-header {
+  background: #39444A;
+  border-color: #908e88;
+}
+
+.chosen-container .chosen-results li.highlighted {
+  background-color: #45545d;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #111), color-stop(90%, #45545d));
+  background-image: -webkit-linear-gradient(#111 20%, #45545d 90%);
+  background-image: -moz-linear-gradient(#111 20%, #45545d 90%);
+  background-image: -o-linear-gradient(#111 20%, #45545d 90%);
+  background-image: linear-gradient(#111 20%, #45545d 90%);
+  color: #fff;
+}
+
+#seek-bar > a.ui-slider-handle,
+#verse-start-end-pos > div.ui-slider-range {
+  background: #6b6a6a;
+}
+
+.stop > span,
+.play > span,
+.restart > span,
+.restart-all > span,
+.pause > span {
+  color: #ff8500;
+}
+
+.stop-grey > span,
+.play-grey > span,
+.restart-grey > span,
+.restart-all-grey > span,
+.pause-grey > span {
+  color: #999 !important;
+}
+
+.toolbtn {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.toolbtn > span,
+#status-bar {
+  color: #8e8d8d;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.context-list > a {
+  color: #fff !important;
+}
+
+#nprogress .bar,
+#btn-play {
+  background-color: #45545d;
+}
+
+.share-btn,
+.hadith-nav > button:hover {
+  color: #45545d;
+  background-color: transparent;
+}
+
+.ui-state-active,
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited,
+#btn-play > span,
+button.toolbtn > span:hover {
+  color: #fff;
+}
+
+/*
+::selection,
+::-moz-selection,
+::-webkit-selection {
+  background: #444;
+}
+*/
+hr.menuhr {
+  background-color: #45545d;
+}
+
+.link-item-icon {
+  color: #A3A2A2;
+}
+
+.tab-updates-count {
+  background-color: #273035;
+  color: #fff;
+}
+
+.sm2-bar-ui .sm2-main-controls,
+.sm2-bar-ui .sm2-playlist-drawer {
+  background-color: #45545d;
+}
+
+.more-menu > ul > li:hover {
+  background: #273035;
+}
+
+h2.non-hideable-section-head, h2.hideable-section-head {
+  background-color: #5A6D74;
+}
+
+.embedded-post blockquote {
+  border-left: 4px solid #7896A7;
+}
+
+.embedded-post h1, .embedded-post h2, .embedded-post h3 {
+  color: #7896A7;
+}
